@@ -11,9 +11,9 @@ public class DaoConfig {
 	private final static String USER_KEY = "JDBC_USER";
 	private final static String PASSWORD_KEY = "JDBC_PASSWORD";
 	
-	private final static String DEFAULT_JDBC_URL = "jdbc:mysql://node208858-env-0803256.j.layershift.co.uk/fleet";
-	private final static String DEFAULT_USER = "root";
-	private final static String DEFAULT_PASSWORD = "KVIycb55439";
+	private final static String DEFAULT_JDBC_URL = "jdbc:mysql://localhost:3306/fleet";
+	private final static String DEFAULT_USER = "fleet";
+	private final static String DEFAULT_PASSWORD = "fleet";
 
 	public String getJdbcUrl() {
 		return SystemVar.getSystemVariable(JDBC_URL_KEY, DEFAULT_JDBC_URL);

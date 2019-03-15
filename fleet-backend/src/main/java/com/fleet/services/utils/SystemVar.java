@@ -11,15 +11,20 @@ public final class SystemVar {
 	public static String getSystemVariable(String key, String defaultValue) {
 		String value = System.getenv(key);
 		if(StringUtils.isEmpty(value)) {
-			value = System.getProperty(key);
+			value = System.getProperty(key, defaultValue);
 		}
 		if(StringUtils.isEmpty(value)) {
 			value = defaultValue;
 		}
 		
-		System.out.println("##############################");
-		System.out.println(key + "=" + value);
-		System.out.println("##############################");
+		print(key);
 		return value;
+	}
+	
+	private static void print(String key) {
+		System.out.println("##############################");
+		System.out.println("System.getenv("+key+") =" + System.getenv(key));
+		System.out.println("System.getProperty("+key+") =" + System.getProperty(key));
+		System.out.println("##############################");
 	}
 }
