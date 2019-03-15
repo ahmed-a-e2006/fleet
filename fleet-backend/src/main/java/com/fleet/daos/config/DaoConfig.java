@@ -11,7 +11,7 @@ public class DaoConfig {
 	private final static String USER_KEY = "JDBC_USER";
 	private final static String PASSWORD_KEY = "JDBC_PASSWORD";
 	
-	private final static String DEFAULT_JDBC_URL = "jdbc:mariadb://node208858-env-0803256.j.layershift.co.uk/fleet?usePipelineAuth=false";
+	private final static String DEFAULT_JDBC_URL = "jdbc:mysql://node208858-env-0803256.j.layershift.co.uk/fleet";
 	private final static String DEFAULT_USER = "root";
 	private final static String DEFAULT_PASSWORD = "KVIycb55439";
 
